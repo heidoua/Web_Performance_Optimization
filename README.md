@@ -2,13 +2,6 @@
 几乎所有的开发者都会面临着开发的网站存在加载问题，想要加快网页的加载速度前端的页面更需要在性能优化上下功夫，只有这样才能实现更好的用户体验。
 
 本文从构建、浏览器渲染、缓存、PWA、服务端优化等多方面，梳理前端性能优化的技术点、综合分析技术的原理，根据不同的业务场景选择合适的性能优化点进行应用，最终为你的网站带来显著的速度提升和整体性能提升。
-
-## 技术和工具
-- 少量Vue.js
-- VsCode
-- Chrome
-    - performance
-    - layers
 ## 本文设计到的前端性能优化点、功能点
 - 网络层面
 - 构建层面
@@ -22,6 +15,13 @@
 - 缓存机制
 - PWA
 - Vue-SSR
+## 相关技术和工具
+- 少量Vue.js
+- 版本控制：git
+- 开发工具：VSCode
+- 调试工具：Chrome
+    - performance
+    - layers
 ## 下载源码
 ```
 git clone https://github.com/fangfeiyue/Web_Performance_Optimization.git

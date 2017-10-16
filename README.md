@@ -56,7 +56,10 @@
         - 适用SVG进行矢量图的绘制
         - 适用iconfont解决icon问题
     - 在安卓下使用webp,常用制作webp的网站：[智图](http://zhitu.isux.us/)
- 
+## css和js的装载与执行
+- html加载渲染的过程
+
+![html加载渲染的过程](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/E6F38972BFD34E89981B448423399DB9/17832)
 
 ## 相关技术和工具
 - 少量Vue.js

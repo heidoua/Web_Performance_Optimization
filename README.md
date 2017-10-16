@@ -47,7 +47,7 @@
     - webp压缩程度更好，在ios webview有兼容性问题，适用于安卓全部
     - svg矢量图，代码内嵌，相对较小，适用于图片样式相对简单的场景
 - 图片优化的几种方法
-    - 进行图片压缩，常用网站：![tinypng](https://tinypng.com/)
+    - 进行图片压缩，常用网站：[tinypng](https://tinypng.com/)
     - css雪碧图
         - 优点：减少HTTP请求量
         - 缺点：整合图片比较大时，一次加载比较慢

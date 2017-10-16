@@ -85,7 +85,7 @@
     - 使用img图片直接加载，display属性设置为none
     - 使用Image对象
     - 使用XMLHttpRequest对象
-    - 预加载的库：[http://www.createjs.cc/preloadjs/docs/modules/PreloadJS.html](preloadjs)
+    - 预加载的库：[PreloadJs](http://www.createjs.cc/preloadjs/docs/modules/PreloadJS.html)
 - PreloadJs的简单使用
     - 引入PreloadJs
     ```

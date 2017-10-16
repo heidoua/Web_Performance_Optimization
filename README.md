@@ -46,16 +46,16 @@
     - png支持透明，浏览器兼容好，适用于大部分需要透明图片的业务场景
     - webp压缩程度更好，在ios webview有兼容性问题，适用于安卓全部
     - svg矢量图，代码内嵌，相对较小，适用于图片样式相对简单的场景
-- 图片优化的几种方法
+- 图片优化的几种方法,通常都用前端构建工具完成
     - 进行图片压缩，常用网站：[tinypng](https://tinypng.com/)
-    - css雪碧图
+    - css雪碧图，常用网站：[spritecow](http://www.spritecow.com/)
         - 优点：减少HTTP请求量
         - 缺点：整合图片比较大时，一次加载比较慢
     - imgge inline 将图片的内容内嵌到html当中，图片要小才能适用这种方法
     - 适用矢量图
         - 适用SVG进行矢量图的绘制
         - 适用iconfont解决icon问题
-    - 在安卓下使用webp
+    - 在安卓下使用webp,常用制作webp的网站：[智图](http://zhitu.isux.us/)
  
 
 ## 相关技术和工具

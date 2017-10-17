@@ -153,7 +153,10 @@
     - 对于动画新建图层
     - 启用GPU硬件加速
 ## 浏览器存储
+### cookies
+- 为什么需要cookies
 
+![cookies](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/9EDFA49A7D514C26996684524B5F3A98/17834)
 ## 传说中的彩蛋：
 
 - MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？

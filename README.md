@@ -155,8 +155,20 @@
 ## 浏览器存储
 ### cookies
 - 为什么需要cookies
+    - 浏览器端和服务器端的交互，维持客户端状态(设计初衷)
+    - 客户端自身数据的存储
 
 ![cookies](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/9EDFA49A7D514C26996684524B5F3A98/17834)
+
+- cookie存储限制
+    - 作为浏览器存储，大小4kb左右
+    - cookie是一个域名维度下的概念，只要是这个域名下的所有请求都会携带上cookie，但并不是所有请求都需要用cookie
+        - 解决办法：cdn上放静态文件，cdn的域名和主站的域名要分开，每次请求cdn静态文件不会携带上cookie
+    - 需要设计过期时间 expire
+- cookie的一个重要属性httponly，不允许js读写
+- cookie的生成方式
+js中可以通过document.cookie可以读写cookie
+
 ## 传说中的彩蛋：
 
 - MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？

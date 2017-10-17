@@ -133,7 +133,7 @@
         - 将频繁重绘、回流的DOM元素单独作为一个图层，那么这个DOM元素的重绘和回流的影响只会在这个图层中。
         - 缺点：图层过多会消耗大量的时间进行图层合成
 - Chrome创建图层的条件
-    - 3D或透视b变换css属性（transform、perspective）
+    - 3D或透视b变换css属性（transform、perspective,will-change:transform）
     - 使用加速视频解码的`<vido>`标签
     - 拥有3D上下文(WebGL)上下文或加速的2D上下文的`<canvas>`节点
     - 混合插件（如Flash）
@@ -153,7 +153,7 @@
     - 对于动画新建图层
     - 启用GPU硬件加速
 
-### 传说中的彩蛋：
+## 传说中的彩蛋：
 
 - MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？
 

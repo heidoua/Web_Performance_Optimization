@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- 用translate替代top改变,top会触发layout，translate不触发回流  -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +7,11 @@
     <title>Document</title>
     <style>
         #rect{
+            position: relative;
             width: 100px;
             height: 100px;
             background-color: blue;
             opacity: 1;
-            transform: translateZ(0);
         }
     </style>
 </head>

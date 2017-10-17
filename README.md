@@ -143,21 +143,25 @@
     - 元素有一个z-index较低且包含一个复合层的兄弟元素，换句话说就是该元素在复合层上面渲染
 
 - 针对重绘、回流优化的方法
-    - 用translate替代top改变
-    - 用opacity替代visibility
+    - 用translate替代top改变,top会触发layout，translate不触发回流  
+    - 用opacity替代visibility，visibility触发重绘，opacity不会触发重绘
     - 不要一条条修改DOM样式,预先定义好class，然后修改DOM的className
     - 把DOM离线后修改，比如把DOM给display:none，然后你修改100次，然后再把它显示出来
-    - 不要把DOM节点的属性值放在一个循环里当成循环里的变量
+    - 不要把DOM节点的属性值放在一个循环里当成循环里的变量，如offsetHeight、offsetWidth
     - 不要使用table布局，可能一个很小的改动会造成整个table的重新布局
     - 动画实现的速度的选择
     - 对于动画新建图层
     - 启用GPU硬件加速
 
-题外话：
+### 传说中的彩蛋：
 
-MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？
+- MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？
 
 系统偏好设置 -> 键盘 -> 快捷键 -> 服务，勾选「新建位于文件夹位置的终端窗口」（后面的键盘快捷键可以不选），然后在 Finder 里面选中文件夹右键菜单的「服务」下面就会有「新建位于文件夹位置的终端窗口」这一子菜单了。
+- MAC OS快速打开spotlight
+Control 键+空格
+
+Command+B立刻打开网页在搜索引擎中搜索你键入OS快速打开spotlight的内容。
 ## 相关技术和工具
 - 少量Vue.js
 - 版本控制：git

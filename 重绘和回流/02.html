@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- 用translate替代top改变,top会触发layout，translate不触发回流  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #rect{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="rect"></div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('rect').style.visibility = 'hidden';
+        }, 2000);
+    </script>
+</body>
+</html>

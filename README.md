@@ -120,9 +120,9 @@
 - 什么情况下会产生回流
     - 当页面布局和几何属性改变时就需要回流
 - 触发页面重布局的属性
-    - 盒子模型相关属性
-    - 定位属性及浮动
-    - 改变节点内部文字结构
+    - 盒子模型相关属性：width、height、padding、margin、display、border-width、border、min-height
+    - 定位属性及浮动：top、bottom、left、right、position、float、clear
+    - 改变节点内部文字结构：text-align、overflow-y、font-weight、overflow、font-family、line-height、vertival-align、white-space、font-size
 ### 重绘
 - 当render tree中的一些元素需要更新属性，而这些属性只是影响元素的外观，风格，而不会影响布局，如color，则称为重绘
 - 回流必定引起重绘，重绘不一定引起回流

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if (window.sessionStorage){
+            // 设置SessionStorage
+            sessionStorage.setItem('name', 'yff');
+            sessionStorage.setItem('score', '100');
+            // 读取SessionStorage中的值
+            console.log(sessionStorage.getItem('name'));
+            console.log(sessionStorage.getItem('score'));
+        }
+    </script>
+</body>
+</html>

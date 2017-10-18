@@ -179,19 +179,41 @@ console.log(document.cookie);//username=jerry; age=18;
 ```
 注意：在谷歌浏览器chrome中调试居然不生效！！！不管是使用jquery的cookie插件，还是js原生态的cookie方法都不生效！！！什么原因呢？原因在于chrome不支持js在本地操作cookie!
 ### LocalStorage
-    - 特点：
-        - HTML5设计出来专门用于浏览器存储的
-        - 大小5M左右
-        - 仅在客户端使用，不和服务端进行通信
-        - 接口封装较好
-        - 浏览器本地缓存方案
+- 特点：
+    - HTML5设计出来专门用于浏览器存储的
+    - 大小5M左右
+    - 仅在客户端使用，不和服务端进行通信
+    - 接口封装较好
+    - 浏览器本地缓存方案
+- 简单使用
+```
+if (window.localStorage){
+    // 设置localStorage
+    localStorage.setItem('age', '18');
+    localStorage.setItem('name', 'ffy');
+    // 读取localStorage中的值
+    console.log(localStorage.getItem('name'));
+    console.log(localStorage.getItem('age'));
+}
+```
 ### SessionStorage
-    - 特点：
-        - 会话级别的浏览器存储
-        - 大小5M左右
-        - 仅在客户端使用，不和服务端进行通信
-        - 接口封装较好
-        - 对于表单信息的维护
+- 特点：
+    - 会话级别的浏览器存储
+    - 大小5M左右
+    - 仅在客户端使用，不和服务端进行通信
+    - 接口封装较好
+    - 对于表单信息的维护
+- 简单使用
+```
+if (window.sessionStorage){
+    // 设置SessionStorage
+    sessionStorage.setItem('name', 'yff');
+    sessionStorage.setItem('score', '100');
+    // 读取SessionStorage中的值
+    console.log(sessionStorage.getItem('name'));
+    console.log(sessionStorage.getItem('score'));
+}
+```
 ### IndexDB 
 IndexDB是一种低级API，用户客户端存储大量结构化数据。该API使用索引来实现对该数据的高性能搜索。虽然Web Storage对于存储较少量的数据很有用，但对于存储大量的结构化数据来说，这种方法不太适用，IndexDB提供了一个解决方案
 ### Service Workers

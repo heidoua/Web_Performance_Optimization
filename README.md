@@ -169,6 +169,15 @@
         - 解决办法：cdn上放静态文件，cdn的域名和主站的域名要分开，每次请求cdn静态文件不会携带上cookie
     - 需要设计过期时间 expire
 - cookie的一个重要属性httponly，不允许js读写
+- cookie的简单操作
+```
+//设置cookie
+document.cookie = "username=jerry";
+document.cookie = "age=18";
+//读取cookie
+console.log(document.cookie);//username=jerry; age=18; 
+```
+注意：在谷歌浏览器chrome中调试居然不生效！！！不管是使用jquery的cookie插件，还是js原生态的cookie方法都不生效！！！什么原因呢？原因在于chrome不支持js在本地操作cookie!
 ### LocalStorage
     - 特点：
         - HTML5设计出来专门用于浏览器存储的

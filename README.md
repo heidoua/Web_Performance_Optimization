@@ -222,6 +222,9 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
  - Service Worker是一个脚本，浏览器独立于当前网页，将其在后台运行,为实现一些不依赖页面或者用户交互的特性打开了一扇大门。在未来这些特性将包括推送消息,背景后台同步， geofencing（地理围栏定位），但它将推出的第一个首要特性，就是拦截和处理网络请求的能力，包括以编程方式来管理被缓存的响应。
 - chrome://serviceworker-internals/运行过的Service Workers
 - chrome://inspect/#service-workers查看浏览器正在运行的Service Workers
+- 生命周期
+
+![Service Workers生命周期](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/3A42973E48174043BA1849D2EF3F68F6/17836)
 ### PWA
 - 什么是PWA
     - PWA（Progressive Web Apps）是一种We b App新模型，并不是具体指某一种前沿的技术或者某一个单一的知识点，我们从英文缩写来看就能看出来，这是一个渐进式的Web App,是通过一系列新的Web特性，配合优秀的UI交互设计，逐步增强Web App的用户体验。
@@ -230,8 +233,16 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
     - 快速：针对网页渲染及网络数据访问有较好优化
     - 融入：应用可以被添加到手机桌面，并且和普通应用一样有全屏、推送等特性
 - PWA性能检测[Chrome插件-lighthouse](https://lavas.baidu.com/doc-assets/lavas/vue/more/downloads/lighthouse_2.1.0_0.zip)
+## 缓存
+- Expires
 
-
+- Cache-Control 
+    - max-age：指定缓存的最大有效时间
+    - s-maxage：只能指定public的缓存设备，比如cdn，开放给不同人使用的设备
+    - private：表示响应是针对单个用户，不能由共享缓存存储。私有缓存可以存储响应。
+    - public： 表示响应可能被任何缓存缓存
+    - no-cache：不管怎么样都会发起请求，询问缓存是否过期
+    - no-store：所有内容都不会被缓存到缓存或 Internet 临时文件中
 ## 传说中的彩蛋：
 
 - MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？

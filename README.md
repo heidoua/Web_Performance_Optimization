@@ -261,6 +261,9 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
 - 分级缓存策略
 
 ![分级缓存策略](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/A797B68940C94518932A2C86B568BCFC/17838)
+
+- 查看chrome浏览器当前缓存的信息：chrome://cache/
+
 ## SSR（服务端渲染）
 ###
 ## 传说中的彩蛋：
@@ -318,3 +321,7 @@ QQ：294925572
 觉得有帮助可以微信扫码支持下哦，赞赏金额不限，一分也是您对作者的鼎力支持
 
 ![微信打赏](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/D77744C8EC944CF6AA232272CBC5CF6D/17828)
+```
+ graph LR
+    A[A]--B[B]
+```

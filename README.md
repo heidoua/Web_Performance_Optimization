@@ -235,7 +235,8 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
 - PWA性能检测[Chrome插件-lighthouse](https://lavas.baidu.com/doc-assets/lavas/vue/more/downloads/lighthouse_2.1.0_0.zip)
 ## 缓存
 - Expires
-
+    - 缓存过期时间，用来指定资源到期时间，是服务器端的具体的时间点。
+    - 告诉浏览器在过期时间前浏览器可以直接从浏览器缓存读取数据，无需再次请求
 - Cache-Control 
     - max-age：指定缓存的最大有效时间
     - s-maxage：只能指定public的缓存设备，比如cdn，开放给不同人使用的设备
@@ -243,6 +244,11 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
     - public： 表示响应可能被任何缓存缓存
     - no-cache：不管怎么样都会发起请求，询问缓存是否过期
     - no-store：所有内容都不会被缓存到缓存或 Internet 临时文件中
+- last-modified和If-modified-since
+    - 基于客户端和服务端协商的缓存机制
+    - last-modified--response header
+    - If-modified-since-- request header
+    - 需要和Cache-Control共同使用
 ## 传说中的彩蛋：
 
 - MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？

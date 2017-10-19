@@ -279,6 +279,11 @@ Command+B立刻打开网页在搜索引擎中搜索你键入OS快速打开spotli
 - 使用VSCode编辑markdown使用到的插件
     - (Markdown Preview Mermaid Support)[https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/] 显示流程图用，Markdown Preview Enhanced 使用 mermaid 来渲染流程图和时序图。
     - Markdown Preview Enhanced  是一款为 Atom 以及 Visual Studio Code 编辑器编写的超级强大的 Markdown 插件
+- diff语法,版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除,使用绿色表示新增，红色表示删除。其语法与代码高亮类似，只是在三个反引号后面写diff， 并且其内容中，以 +开头表示新增，-开头表示删除。
+```diff
++ test
+- test
+```
 ## 相关技术和工具
 - 少量Vue.js
 - 版本控制：git
@@ -323,11 +328,3 @@ QQ：294925572
 觉得有帮助可以微信扫码支持下哦，赞赏金额不限，一分也是您对作者的鼎力支持
 
 ![微信打赏](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/D77744C8EC944CF6AA232272CBC5CF6D/17828)
-
-```
-- sdsd
-+ asdfadsf
-```
-
-`- asd`
-`+ asdasd`

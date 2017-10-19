@@ -277,7 +277,7 @@ Control 键+空格
 ```
 Command+B立刻打开网页在搜索引擎中搜索你键入OS快速打开spotlight的内容。
 - 使用VSCode编辑markdown使用到的插件
-    - (Markdown Preview Mermaid Support)[https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/] 显示流程图用，Markdown Preview Enhanced 使用 mermaid 来渲染流程图和时序图。
+    - [Markdown Preview Mermaid Support](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/) 显示流程图用，Markdown Preview Enhanced 使用 mermaid 来渲染流程图和时序图。
     - Markdown Preview Enhanced  是一款为 Atom 以及 Visual Studio Code 编辑器编写的超级强大的 Markdown 插件
 - diff语法,版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除,使用绿色表示新增，红色表示删除。其语法与代码高亮类似，只是在三个反引号后面写diff， 并且其内容中，以 +开头表示新增，-开头表示删除。
 ```diff

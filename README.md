@@ -227,7 +227,7 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
 ![Service Workers生命周期](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/3A42973E48174043BA1849D2EF3F68F6/17836)
 ### PWA
 - 什么是PWA
-    - PWA（Progressive Web Apps）是一种We b App新模型，并不是具体指某一种前沿的技术或者某一个单一的知识点，我们从英文缩写来看就能看出来，这是一个渐进式的Web App,是通过一系列新的Web特性，配合优秀的UI交互设计，逐步增强Web App的用户体验。
+    - PWA（Progressive Web Apps）是一种Web App新模型，并不是具体指某一种前沿的技术或者某一个单一的知识点，我们从英文缩写来看就能看出来，这是一个渐进式的Web App,是通过一系列新的Web特性，配合优秀的UI交互设计，逐步增强Web App的用户体验。
 - PWA的三个方向
     - 可靠：在没有网络的环境中也能提供基本的页面访问，而不会出现"未连接到互联网"的页面
     - 快速：针对网页渲染及网络数据访问有较好优化
@@ -248,7 +248,21 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
     - 基于客户端和服务端协商的缓存机制
     - last-modified--response header
     - If-modified-since-- request header
-    - 需要和Cache-Control共同使用
+    - 需要和Cache-Control共同使用，如果max-age过期了才会和服务端进行协商
+- last-modified的缺点
+    - 某些服务端不能获取精确的修改时间，用last-modified返回准确时间是做不到的
+    - 文件修改时间改了，但文件内容没有变，这种情况使用last-modified也会让缓存失效，这样是不合理的
+
+- Etag-If-None-Match
+    - 文件内容的hash值
+    - etag -- response header
+    - if-none-match -- request header
+    - 需要与cache-control共同使用
+- 分级缓存策略
+
+![分级缓存策略](http://note.youdao.com/yws/public/resource/c2361265179a03449f6d52397fd50033/xmlnote/A797B68940C94518932A2C86B568BCFC/17838)
+## SSR（服务端渲染）
+###
 ## 传说中的彩蛋：
 
 - MAC OSX右键菜单能否添加类似于“在终端中打开当前目录”的快捷方式？

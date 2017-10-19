@@ -275,11 +275,10 @@ IndexDB是一种低级API，用户客户端存储大量结构化数据。该API�
 ```
 Control 键+空格
 ```
+Command+B立刻打开网页在搜索引擎中搜索你键入OS快速打开spotlight的内容。
 - 使用VSCode编辑markdown使用到的插件
     - (Markdown Preview Mermaid Support)[https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/] 显示流程图用，Markdown Preview Enhanced 使用 mermaid 来渲染流程图和时序图。
     - Markdown Preview Enhanced  是一款为 Atom 以及 Visual Studio Code 编辑器编写的超级强大的 Markdown 插件
-
-Command+B立刻打开网页在搜索引擎中搜索你键入OS快速打开spotlight的内容。
 ## 相关技术和工具
 - 少量Vue.js
 - 版本控制：git

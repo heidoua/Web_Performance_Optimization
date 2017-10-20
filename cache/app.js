@@ -18,7 +18,7 @@ var PORT   = 8000,
     http   = require('http'),
     path   = require('path'),
     mime   = require('mime').types;
-    config = require('config');
+    config = require('./config');
  
 var server = http.createServer(function(request, response){
     var contentType = "image/png",
@@ -27,7 +27,7 @@ var server = http.createServer(function(request, response){
         ext      = path.extname(realPath);
     
     ext          = ext ? ext.slice(1) : 'unknown';    
-    contentType  = mime[ext] || "text/plain";
+    // contentType  = mime[ext] || "text/plain";
 
     if (ext.match(config.Expires.fileMatch)){
         var expires = new Date();

@@ -17,17 +17,17 @@ var PORT   = 8000,
     url    = require('url'),
     http   = require('http'),
     path   = require('path'),
-    mime   = require('mime').types;
+    mime   = require('./mime').types;
     config = require('./config');
  
 var server = http.createServer(function(request, response){
-    var contentType = "image/png",
+    var contentType,
         pathName = url.parse(request.url).pathname,
         realPath = 'assets' + pathName,
         ext      = path.extname(realPath);
     
     ext          = ext ? ext.slice(1) : 'unknown';    
-    // contentType  = mime[ext] || "text/plain";
+    contentType  = mime[ext] || "text/plain";
 
     if (ext.match(config.Expires.fileMatch)){
         var expires = new Date();
@@ -35,6 +35,10 @@ var server = http.createServer(function(request, response){
         response.setHeader('Expires', expires.toUTCString());
         response.setHeader('Cache-Control', 'max-age=' + config.Expires.maxAge);
     }
+
+    fs.stat(realPath, function(err, stat){
+        var last
+    });
 
     fs.exists(realPath, function(exists){
         if (!exists){

@@ -284,6 +284,11 @@ Command+B立刻打开网页在搜索引擎中搜索你键入OS快速打开spotli
 + test
 - test
 ```
+- [git commit时使用Emoji](https://gitmoji.carloscuesta.me/)
+使用方法：直接复制上述网址中所需图片下面黑色粗体文字到commit的描述中即可
+```
+git commit -m ':art:格式化代码'
+```
 ## 相关技术和工具
 - 少量Vue.js
 - 版本控制：git
